@@ -36,40 +36,29 @@ agile-to-do-list/
 
 │
 ├── frontend/ # Frontend source code
-
 |
 │ ├── index.html # Main webpage
 
 │ ├── styles/
 
-    |
 │ │ └── style.css # Dark theme styles & animations
-
 | |
 │ └── scripts/
 
-| |
 │ └── app.js # Frontend JavaScript with backend integration
 
-│
 ├── backend/ # Backend Node.js API
 
-| |
 │ ├── server.js # Express server code handling task CRUD
 
-| |
 │ └── package.json # Backend dependencies & scripts
 
-│
 └── agile/ # Agile documentation folder
 
-|
 ├── backlog.md # Product backlog (User stories)
 
-|
 ├── sprint-planning.md # Sprint plans and goals
 
-|
 └── retrospective.md # Sprint review and improvement ideas
 
 ---
@@ -119,7 +108,10 @@ Backend server runs at [http://localhost:3000](http://localhost:3000)
 
 ## OUTPUT
 
-
+<img width="927" height="539" alt="Image" src="https://github.com/user-attachments/assets/bf13af11-ae73-46c7-b0f7-be9e6c32b51f" />
+<img width="952" height="644" alt="Image" src="https://github.com/user-attachments/assets/ebca15c8-4dd7-41da-8aa3-2fad7741334f" />
+<img width="1010" height="849" alt="Image" src="https://github.com/user-attachments/assets/f3aeb5c0-6694-4684-9993-b521365e42e4" />
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/0138bdb7-0453-4bfd-923f-f857b5fe10f1" />
 
 
 
