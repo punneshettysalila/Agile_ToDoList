@@ -1,0 +1,181 @@
+/* Dark Theme Colors */
+:root {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --container-bg: #1e1e1e;
+  --input-bg: #2c2c2c;
+  --button-bg: #3a3a3a;
+  --button-hover: #575757;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+  --popup-bg: #333333;
+}
+
+/* Dark Mode Body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main Container */
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: var(--container-bg);
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field with Shadow */
+input[type="text"], #searchInput {
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  box-shadow: 0 3px 8px var(--shadow-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, #searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 10px 3px #0088ff;
+}
+
+/* Add Task Button with Box and Hover */
+button {
+  background-color: var(--button-bg);
+  border: none;
+  padding: 12px 20px;
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  box-shadow: 0 6px 12px var(--shadow-color);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  opacity: 0;
+  animation: popupFadeIn 0.4s ease forwards;
+}
+
+/* Fade in popup effect for each new list item */
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Checkbox Styling */
+li input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Completed Task Styling */
+.completed {
+  text-decoration: line-through;
+  color: #888888;
+  transition: color 0.3s ease;
+}
+
+/* Edit and Delete Buttons Box Style */
+button.editBtn, button.deleteBtn {
+  background-color: var(--button-bg);
+  border: 1.5px solid #555;
+  color: var(--text-color);
+  padding: 6px 10px;
+  border-radius: 7px;
+  margin-left: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 7px var(--shadow-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 14px;
+  user-select: none;
+}
+
+button.editBtn:hover {
+  background-color: #0056b3;
+  border-color: #003d80;
+}
+
+button.deleteBtn:hover {
+  background-color: #b30000;
+  border-color: #800000;
+}
+
+/* Button active scale */
+button.editBtn:active,
+button.deleteBtn:active {
+  transform: scale(0.95);
+}
+
+/* Search Bar styling (optional if you want to add search) */
+#searchInput {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  button {
+    padding: 10px;
+  }
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  button.editBtn, button.deleteBtn {
+    margin: 5px 5px 0 0;
+  }
+}
