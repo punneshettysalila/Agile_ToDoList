@@ -33,30 +33,42 @@ This application helps users manage their daily tasks efficiently by adding, edi
 ## 📁 Project Structure
 
 agile-to-do-list/
+
 │
 ├── frontend/ # Frontend source code
+
 |
 │ ├── index.html # Main webpage
-  |
+
 │ ├── styles/
+
     |
 │ │ └── style.css # Dark theme styles & animations
+
 | |
 │ └── scripts/
+
 | |
 │ └── app.js # Frontend JavaScript with backend integration
+
 │
 ├── backend/ # Backend Node.js API
+
 | |
 │ ├── server.js # Express server code handling task CRUD
+
 | |
 │ └── package.json # Backend dependencies & scripts
+
 │
 └── agile/ # Agile documentation folder
+
 |
 ├── backlog.md # Product backlog (User stories)
+
 |
 ├── sprint-planning.md # Sprint plans and goals
+
 |
 └── retrospective.md # Sprint review and improvement ideas
 
@@ -105,16 +117,11 @@ Backend server runs at [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Contributing
+## OUTPUT
 
-Contributions and suggestions are welcome! Feel free to:
 
-- Report bugs or issues
-- Propose new features
-- Improve UI/UX
-- Add persistent database storage
 
-Please fork the repository and submit a pull request for review.
+
 
 ---
 
